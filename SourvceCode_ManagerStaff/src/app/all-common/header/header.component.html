@@ -1,0 +1,48 @@
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Company</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+			
+	<div class="collapse navbar-collapse navbar-ex1-collapse">
+	      <ul class="nav navbar-nav">
+	        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+	          <a [routerLink]="['/index']">Trang chủ</a>
+	        </li>
+	        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+	          <a [routerLink]="['/staff']">Quản lí nhân viên</a>
+	        </li>
+	        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+	          <a [routerLink]="['/config']">Cấu hình hệ thống</a>
+	        </li>
+	        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+	          <a [routerLink]="['/notification']">Thông báo</a>
+	        </li>
+	        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+	          <a [routerLink]="['/project']">Quản lí dự án</a>
+	        </li>
+	        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+	          <a [routerLink]="['/salary']">Lương</a>
+	        </li>
+	        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+	          <a [routerLink]="['/timesheet']">Quản lí chấm công</a>
+	        </li>
+	      </ul>
+    </div>
+
+	</div>
+</nav>
+
+
