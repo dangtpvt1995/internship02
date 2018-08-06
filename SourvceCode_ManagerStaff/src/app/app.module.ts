@@ -11,7 +11,7 @@ import {ProjectComponent} from './managed-project/./project/./project.component'
 import {SalaryComponent} from './managed-salary/./salary/salary.component';
 import {TimesheetComponent} from './managed-timesheet/./timesheet/timesheet.component';
 import {appRoutes} from './app.routes';
-import { HomeComponent } from './Component/home/home.component'
+import { HomeComponent } from './Component/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +23,7 @@ import { HomeComponent } from './Component/home/home.component'
     SalaryComponent,
     TimesheetComponent,
     HomeComponent
+
 
   ],
   imports: [

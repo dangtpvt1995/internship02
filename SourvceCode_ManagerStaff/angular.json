@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "Company"
+  "defaultProject": "Company",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
