@@ -1,49 +1,43 @@
-<nav class="navbar navbar-default" role="navigation">
-	<div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">Company</a>
-		</div>
-
-		<!-- Collect the nav links, forms, and other content for toggling -->
-			
-	<div class="collapse navbar-collapse navbar-ex1-collapse test" >
-	      <ul class="nav navbar-nav header">
-	        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
-	          <a [routerLink]="['/index']">Trang chủ</a>
-	        </li>
-	        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
-	          <a [routerLink]="['/staff']">Quản lí nhân viên</a>
-	        </li>
-	        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
-	          <a [routerLink]="['/config']">Cấu hình hệ thống</a>
-	        </li>
-	        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
-	          <a [routerLink]="['/notification']">Thông báo</a>
-	        </li>
-	        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
-	          <a [routerLink]="['/project']">Quản lí dự án</a>
-	        </li>
-	        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
-	          <a [routerLink]="['/salary']">Lương</a>
-	        </li>
-	        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
-	          <a [routerLink]="['/timesheet']">Quản lí chấm công</a>
-	        </li>
-	      </ul>
-    </div>
-
-	</div>
-</nav>
-
-
+<!DOCTYPE html>
+<header>
+  <div>
+    <div id="title">Email: itsol@gmail.com Số điện thoại: 081112255 </div>
+    <img [src]="imageUrl" alt="" id="image">
+    <img [src]="imageFace" alt="" id="image1">
+    <img [src]="imageTwitter" alt="" id="image2">
+    <img [src]="imageInsta" alt="" id="image3">
+  </div>
+  <nav>
+    <ul>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" [routerLink]="['/index']"><a>Trang chủ</a></li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <a [routerLink]="['/staff']">Quản lí nhân viên</a>
+      </li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <a [routerLink]="['/config']">Cấu hình hệ thống</a>
+      </li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/notification']">Thông báo</a></li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/project']">Quản lí dự án<img src="./../../../assets/hinh/down_arrow_32_32.png" 
+         alt=""></a>
+        <ul>
+          <li><a>Pikachu</a></li>
+          <li><a>Raichu</a></li>
+          <li><a>Pichu</a></li>
+        </ul>
+      </li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/salary']">Lương<img src="./../../../assets/hinh/down_arrow_32_32.png" 
+         alt=""></a>
+        <ul>
+          <li><a>Doaremon</a></li>
+          <li><a>Nobita</a></li>
+          <li><a>Xuka</a></li>
+        </ul>
+      </li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/timesheet']">Quản lí chấm công</a></li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/login']"><img src="./../../../assets/hinh/login_32x32.png" 
+         alt="">Login</a></li>
+    </ul>
+  </nav>
+  <div></div>
+</header>
 
