@@ -1,3 +1,25 @@
-<p>
- Tao là STAFF đây!!! mày route đúng rồi đó
-</p>
+<p> UserName</p>
+<input #name>
+<p> Pass</p>
+<input #pass>
+<p> Phone</p>
+<input #phone>
+<hr>
+<button type="submit" (click)="add(name.value, pass.value,phone.value)">submit</button>
+<hr>
+<table border="1">
+  <tr>
+    <th>UserName</th>
+    <th>Pass</th>
+    <th>Phone</th>
+  </tr>
+  <tr *ngFor="let Users of users, let i= index">
+    <th>{{Users.name}}</th>
+    <th>{{Users.pass}}</th>
+    <th>{{Users.phone}}</th>
+  </tr>
+</table>
+<div *ngIf="show">dang ki thanh cong
+</div>
+<div *ngIf="message">{{message}}
+</div>
