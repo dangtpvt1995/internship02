@@ -8,6 +8,9 @@ import {SalaryComponent} from './managed-salary/./salary/salary.component';
 import {TimesheetComponent} from './managed-timesheet/./timesheet/timesheet.component';
 import {DefaultComponent} from './Component/default/default.component'
 import { HomeComponent} from './Component/home/home.component'
+
+import {LoginToRoleComponent} from './login/login-to-role/login-to-role.component';
+
 export const appRoutes: Routes = [
 	{
 		path: "",
@@ -43,6 +46,10 @@ export const appRoutes: Routes = [
 	{
 		path: "timesheet",
 		component:TimesheetComponent
+	},
+	{
+		path: "login",
+		component:LoginToRoleComponent
 	},
 	{
 		path: "**",
