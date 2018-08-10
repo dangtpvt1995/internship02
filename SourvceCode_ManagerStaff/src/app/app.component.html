@@ -1,31 +1,112 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="">
-</head>
-<body>
-	<header>
-		<app-header></app-header>
-	</header><!-- /header -->
-	
-	<article>
-		
-			<router-outlet></router-outlet>
-		
-	</article>
-	<footer>
-		<app-footer></app-footer>
-	</footer>
-</body>
-</html>
-
-
-
-
-
-
-
-
+<div class="templa">
+<header>
+	<div>
+		<div class="img">
+			<img [src]="imgLogoITsol" alt="" class="imageLogo">
+			<img [src]="imgFacebook" alt="" class="imageFace">
+			<img [src]="imgTwitter" alt="" class="imageTi">
+			<img [src]="imgInsta" alt="" class="imageInsta">
+		</div>
+		<div class="infor">
+			<p>
+				<img src="./../../../assets/hinh/email_24x24.png">: itsol@gmail.com</p>
+			<p>
+				<img src="./../../../assets/hinh/phone_20x20.png">: 081112255 </p>
+		</div>
+	</div>
+	<nav>
+		<ul>
+			<li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" [routerLink]="['/index']">
+				<a>Trang chủ</a>
+			</li>
+			<li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+				<a [routerLink]="['/staff']">Quản lí nhân viên</a>
+			</li>
+			<li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+				<a [routerLink]="['/config']">Cấu hình hệ thống</a>
+			</li>
+			<li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+				<a [routerLink]="['/notification']">Thông báo</a>
+			</li>
+			<li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+				<a [routerLink]="['/project']">Quản lí dự án
+					<img src="./../../../assets/hinh/down_arrow_32_32.png" alt="">
+				</a>
+				<ul>
+					<li>
+						<a>Pikachu</a>
+					</li>
+					<li>
+						<a>Raichu</a>
+					</li>
+					<li>
+						<a>Pichu</a>
+					</li>
+				</ul>
+			</li>
+			<li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+				<a [routerLink]="['/salary']">Lương
+					<img src="./../../../assets/hinh/down_arrow_32_32.png" alt="">
+				</a>
+				<ul>
+					<li>
+						<a>Doaremon</a>
+					</li>
+					<li>
+						<a>Nobita</a>
+					</li>
+					<li>
+						<a>Xuka</a>
+					</li>
+				</ul>
+			</li>
+			<li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+				<a [routerLink]="['/timesheet']">Quản lí chấm công</a>
+			</li>
+			<li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+				<a [routerLink]="['/login']">
+					<img src="./../../../assets/hinh/login_32x32.png" alt=""> Login</a>
+			</li>
+		</ul>
+		<div></div>
+	</nav>
+</header>
+<div class="break"></div>
+<section>
+		<router-outlet></router-outlet>
+</section>
+<footer>
+	<address class="main">
+		<h3>
+			Trụ sở chính
+		</h3>
+		<p>
+			Tầng 3, Tòa nhà 3A, Ngõ 82 Duy Tân, Cầu Giấy, Hà Nội
+		</p>
+		<p>
+			+84.904.29.05.83
+		</p>
+		<p>
+			cuongdc@itsol.vn
+		</p>
+		<p>
+			http://itsol.vn/
+		</p>
+	</address>
+	<address class="branch">
+		<h3>Chi Nhánh</h3>
+		<p>
+			Đà Nẵng
+		</p>
+		<p>
+			Hồ Chí Minh
+		</p>
+	</address>
+	<address class="contact">
+		<h3>Liên hệ</h3>
+		<p>+ 84.96.719.5555</p>
+		<p>+ 84.901.429.661</p>
+		<p>+8190-6589-9490</p>
+	</address>
+</footer>
+</div>
