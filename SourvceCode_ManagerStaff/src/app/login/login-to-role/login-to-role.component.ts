@@ -9,7 +9,8 @@ export class LoginToRoleComponent implements OnInit {
 
 	public isClick : boolean = false;
 	public text : string = "Số lần đăng nhập thất bại: ";
-	public number: number =0;
+  public number: number =0;
+  public msg : string="";
   constructor() { }
 
   ngOnInit() {

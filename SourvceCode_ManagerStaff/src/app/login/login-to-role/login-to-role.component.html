@@ -1,55 +1,17 @@
-<!DOCTYPE html>
-<html lang="vi">
-<header>
-	<meta charset="UTF-8">
-	
-</header>
-<body>
-
-<div class="limiter">
-		<div class="container-login100" style="background-image: url('./../../../assets/bg-01.jpg');">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form">
-					<span class="login100-form-logo">
-						<img src="./../../../assets/thachlogo.png" class="zmdi zmdi-landscape" >
-					</span>
-
-					<span class="login100-form-title p-b-34 p-t-27">
-						Đăng nhập
-					</span>
-
-					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<i class="fa fa-lock"></i>
-						<input class="input100" type="text" name="username" placeholder="Tên đăng nhập">
-						<span class="glyphicon glyphicon-user"></span>
-
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="pass" placeholder="Mật khẩu">
-						<span class="glyphicon glyphicon-lock"></span>
-					</div>
-
-					<div class="contact100-form-checkbox">
-						<input  type="checkbox" name="remember-me">Ghi nhớ tài khoản
-						
-					</div>
-<p *ngIf="isClick" style="color: red">{{text + number}}</p>
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn"  (click)="onCLick()">
-							Đăng nhập
-						</button>
-					</div>
-
-					<div class="text-center p-t-90">
-						<a class="txt1" href="#">
-							Quên mật khẩu
-						</a>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-
-</body>
-</html>
+<form>
+	<legend>Đăng Nhập</legend>
+	<img src="./../../../assets/hinh/user_128x117.png">
+	<br>
+	<input type="text" placeholder="username" class="username">
+	<br>
+	<br>
+	<input type="password" placeholder="username" class="password">
+	<br>
+	<br>
+	<input type="checkbox" class="check">
+	<label>Lưu thông tin đăng nhập</label>
+	<br>
+	<br>
+	<h4>{{msg}}</h4>
+	<input type="submit" value="Đăng nhập" class="button">
+</form>
