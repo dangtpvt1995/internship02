@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router'
 import { AppComponent } from './app.component';
 import {AllCommonModule} from './all-common/all-common.module';
-import {LoginModule } from './login/login.module'
-
 import { DefaultComponent } from './Component/default/default.component'
 import {StaffComponent} from './managed-staff/./staff/staff.component';
 import {ConfigComponent} from './managed-config/./config/config.component';
@@ -14,9 +12,6 @@ import {SalaryComponent} from './managed-salary/./salary/salary.component';
 import {TimesheetComponent} from './managed-timesheet/./timesheet/timesheet.component';
 import {appRoutes} from './app.routes';
 import { HomeComponent } from './Component/home/home.component';
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,8 +22,7 @@ import { HomeComponent } from './Component/home/home.component';
     ProjectComponent,
     SalaryComponent,
     TimesheetComponent,
-    HomeComponent,
-  
+    HomeComponent
 
 
   ],
@@ -36,8 +30,8 @@ import { HomeComponent } from './Component/home/home.component';
     BrowserModule,
     AllCommonModule,
     RouterModule.forRoot(appRoutes),
-
-    LoginModule
+   
+    
   
   ],
   providers: [],
