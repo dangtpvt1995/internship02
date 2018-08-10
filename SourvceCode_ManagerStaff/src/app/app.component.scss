@@ -10,9 +10,23 @@ div.templa{
 header {
     width: 100%;
     height: 120px;
-    background-color: #99D1D3;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
+    p.quote{
+        position: absolute;
+        left:37%;
+        top:30%;
+        font-size:30px;
+        font-style:italic;
+        color:#103667;
+        text-shadow: 2px 2px 5px;
+        
+        
+    }
+    p.quote:hover{
+        transform: scale(1.2);  
+    }
     div.infor {
         padding: 0;
         margin: 0;
@@ -21,22 +35,43 @@ header {
         right: 5%;
         display: inline-block;
         font-size: 14px;
+        img.phone:hover{
+            transform: scale(1.2);  
+        }
+        img.email:hover{
+            transform: scale(1.2);  
+        }
     }
     div.img {
         img.imageFace {
             position: absolute;
             right: 160px;
             bottom: 10px;
+            width: 30px;
+            height: 30px;
+        }
+        img.imageFace:hover{
+            transform: scale(1.2);
         }
         img.imageTi {
             position: absolute;
             right: 110px;
             bottom: 10px;
+            width: 30px;
+            height: 30px;
+        }
+        img.imageTi:hover{
+            transform: scale(1.2);
         }
         img.imageInsta {
             position: absolute;
             right: 60px;
             bottom: 10px;
+            width: 30px;
+            height: 30px;
+        }
+        img.imageInsta:hover{
+            transform: scale(1.2);
         }
         img.imageLogo {
             width: 120px;
@@ -91,6 +126,7 @@ header {
             }
         }
     }
+   
 }
 div.main{
     display: block;
@@ -125,7 +161,8 @@ footer{
     }
     p{
         font-size: 14px;
-        margin: 1px;
+        margin: 2px;
+        
       }
     h3{
         font-size:16px;
